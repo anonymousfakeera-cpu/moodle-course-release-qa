@@ -10,10 +10,10 @@ Audience: Moodle administrators, plugin developers and security reviewers.
 
 Alpha. Core is in place: capabilities, events, Report Builder entities and system
 reports, course page, site overview, access review, trust sheet, audit report with
-chain verification, and the base rule batch (10 rules).
+chain verification, and the first two rule batches (10 base rules + 7 integrity rules).
 
 Pending: live-site verification, POST-only scan actions, retention/erase flow,
-external audit anchoring, policy profiles, further rule batches.
+external audit anchoring, policy profiles.
 
 ## Requirements
 

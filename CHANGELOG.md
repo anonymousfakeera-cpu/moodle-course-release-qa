@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added (batch 1, pending CI)
+
+- Scan-engine helpers: `course_context::live_modules_of()`, `instances()`,
+  `module_available()`, `completion_rules_used()` with a per-module completion column map.
+- RG-CMP-015 self-completion criterion (critical).
+- RG-CMP-016 view-only automatic completion on quiz, scorm, h5pactivity, assign,
+  lesson (critical; item number 0 treated as a valid grade item).
+- RG-GRD-015 quiz answer visibility before close (critical, display_options bit flags).
+- RG-GRD-016 unlimited quiz attempts (major).
+- RG-GRD-018 unreachable quiz minimum attempts (blocker).
+- RG-H5P-006 manual H5P grading combined with grade-based completion (blocker,
+  skipped when the module is not installed).
+- RG-ENR-006 self-enrolment inactivity cut-off (major, days derived from customint2).
+- Tests: `tests/rules_integrity_test.php` with per-rule PASS/FAIL/SKIP cases, edge cases
+  and registry meta tests.
+- Docs: `docs/research/rule-coverage-matrix.md`.
+
 ### Added
 
 - Capabilities in `db/access.php`: `view`, `viewresults`, `viewevidence`, `run`, `export`,
